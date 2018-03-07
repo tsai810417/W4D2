@@ -1,0 +1,7 @@
+  <% @cats.each do |cat| %>
+    <ul>
+    <li>name: <%= cat.name %></li>
+    <li><%= link_to 'cat info',cat_url(cat) %></li>
+    <li><%= button_to 'Update Cat!',cat_url(cat), method: 'patch' %></li>
+    </ul>
+  <% end %>
